@@ -1,0 +1,10 @@
+﻿  Efimenko_Protection_labq.cpp
+C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(31,10): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(46,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(48,10): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(66,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(96,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(170,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(207,22): warning C4018: '<': signed/unsigned mismatch
+  Efimenko_Protection_labq.vcxproj -> C:\Users\Anastasya\Documents\GitHub\Test_Task\Task\Protection_lab1\Efimenko_Protection_labq\Debug\Efimenko_Protection_labq.exe
