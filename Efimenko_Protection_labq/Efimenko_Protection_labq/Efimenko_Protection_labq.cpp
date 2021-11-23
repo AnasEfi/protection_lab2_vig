@@ -32,7 +32,7 @@ public:
 				j = 0;
 
 			unsigned char ch = word[i] + key[j];
-			//ch = ch % mod;
+			ch = ch % mod;
 			output += ch;
 			j++;
 		}
@@ -119,7 +119,10 @@ public:
 	{
 		double index=0;
 		double index_final = 0;
-		int N = sub.size();
+		int N = 0;
+		for (auto pair : sub)
+			N += pair.second;
+
 		for (auto pair : sub)
 		{
 			double add = 0;
@@ -182,8 +185,9 @@ public:
 			pair<unsigned char, double> high_freq_sub = decrypt_by_average_symbol_value(_substrs[j]);
 			int i1 = (int)high_freq_sub.first;
 			int i2 = (int)max_fr_letter.first;
-			int res = i1 - i2;
+			int res = (i2-i1) % 255;
 			unsigned char difference = (unsigned char)res;
+
 			result.push_back(difference);
 			result2 =+ difference;
 		}
@@ -266,7 +270,7 @@ int main()
 		}
 		case 2:
 		{
-			string filename, string, word2, key, count;
+			string filename, string, word_reference,word2, key, count;
 			cout << "Enter name of file: ";
 			cin >> filename;
 			ifstream inf(filename, ios::binary);
@@ -283,15 +287,15 @@ int main()
 			cout << "Enter name reference text: "; //Input ideal text and count frequency 
 			cin >> filename;
 			ifstream fin(filename, ios::binary);
-			word2 = "";
+			word_reference = "";
 			while (!fin.eof())
 			{
 				getline(fin, count);
-				word2 += count;
+				word_reference += count;
 			}
 			fin.close(); //begin frequency analyse
 
-			pair<unsigned char, double> high_freq_ideal = chiefr2.decrypt_by_average_symbol_value(word2); //самый частовстречаемый символ в эталонном тексте
+			pair<unsigned char, double> high_freq_ideal = chiefr2.decrypt_by_average_symbol_value(word_reference); //самый частовстречаемый символ в эталонном тексте
 		
 			vector<unsigned char> keyChange = chiefr2.frequency_analysis(3, word2, high_freq_ideal); //find key_name
 			ofstream fout;
