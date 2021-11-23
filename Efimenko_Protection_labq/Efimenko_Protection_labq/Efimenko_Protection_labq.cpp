@@ -145,15 +145,15 @@ public:
 		vector<pair<unsigned char, double>> standart_text_symbols_data=get_sorted_symbols_countd(ref_text);
 		vector<pair<unsigned char, double>> frequency_vector;
 		pair<unsigned char, double>letter_frequency;
-		for (auto pair : standart_text_symbols_data)
+		for (auto &pair : standart_text_symbols_data)
 		{
 			double frequency = (double)pair.second / (double)ref_text.size();
 			letter_frequency.first = pair.first;
 			letter_frequency.second = frequency;
 			frequency_vector.push_back(letter_frequency);
 		}
-		pair< unsigned char, double > buf (frequency_vector.at(1).first, frequency_vector.at(1).second);
-		for (auto pair : frequency_vector)
+		pair< unsigned char, double > buf (frequency_vector.at(0).first, frequency_vector.at(0).second);
+		for (auto &pair : frequency_vector)
 		{
 			if (pair.second > buf.second)
 				buf = pair;
@@ -168,11 +168,11 @@ public:
 		vector<unsigned char> result;
 		string result2="";
 		int _LGrammCount = key_length;
-		string*_substrs = new string[_LGrammCount];
+		vector<string>_substrs(_LGrammCount);
 		int _tmp = 0;
 		for (int i = 0; i < textEnc.size(); i++)
 		{
-			_substrs[_tmp] += textEnc[i];
+			_substrs[_tmp].push_back(textEnc[i]);
 			_tmp++;
 			if (_tmp >= key_length)
 				_tmp = 0;
@@ -181,11 +181,15 @@ public:
 		for (int j = 0; j < _LGrammCount; j++)
 		{
 			cout << "L-gramma [" << j << "]: " << endl;
-			cout << _substrs[j] << endl;
-			pair<unsigned char, double> high_freq_sub = decrypt_by_average_symbol_value(_substrs[j]);
+			//cout << _substrs[j] << endl;
+			pair<unsigned char, int> high_freq_sub = decrypt_by_average_symbol_value(_substrs[j]);
 			int i1 = (int)high_freq_sub.first;
 			int i2 = (int)max_fr_letter.first;
-			int res = (i2-i1) % 255;
+			int res = i1 - i2;
+			unsigned char l = 'д';
+			unsigned char l2 = 'о';
+			unsigned char l3 = 'м';
+			
 			unsigned char difference = (unsigned char)res;
 
 			result.push_back(difference);
