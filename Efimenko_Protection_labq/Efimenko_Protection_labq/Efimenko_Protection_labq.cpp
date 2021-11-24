@@ -198,8 +198,6 @@ public:
 		return result;
 	}
 
-
-
 	void findIndexs(string word2)
 	{
 		vector <double> indexes;
@@ -264,7 +262,7 @@ int main()
 			cin >> key;
 			Efimenko_vigener chiefr(key, 255);
 			ofstream fout;
-			fout.open("data2.txt", ios::binary);
+			fout.open("data5.txt", ios::binary);
 			fout << chiefr.encrypt(word);
 			fout.close();
 			fout.open("data3.txt", ios::binary);

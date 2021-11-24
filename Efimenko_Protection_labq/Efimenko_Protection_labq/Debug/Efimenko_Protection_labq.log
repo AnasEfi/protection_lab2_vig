@@ -6,6 +6,16 @@ C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efi
 C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(66,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(96,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(173,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(188,1): error C2440: 'type cast': cannot convert from 'std::vector<unsigned char,std::allocator<unsigned char>>' to 'unsigned char'
-C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(188,31): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(210,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(213,22): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility(249,61): warning C4244: 'initializing': conversion from '_Ty' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty2=int
+          ]
+C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(185): message : see reference to function template instantiation 'std::pair<unsigned char,int>::pair<unsigned char,double,0>(std::pair<unsigned char,double> &&) noexcept' being compiled
+C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Efimenko_Protection_labq\Efimenko_Protection_labq.cpp(185): message : see reference to function template instantiation 'std::pair<unsigned char,int>::pair<unsigned char,double,0>(std::pair<unsigned char,double> &&) noexcept' being compiled
+  Efimenko_Protection_labq.vcxproj -> C:\Users\Anastasya\Documents\GitHub\protection_lab2\Efimenko_Protection_labq\Debug\Efimenko_Protection_labq.exe
