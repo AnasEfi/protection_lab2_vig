@@ -262,10 +262,10 @@ int main()
 			cin >> key;
 			Efimenko_vigener chiefr(key, 255);
 			ofstream fout;
-			fout.open("data5.txt", ios::binary);
+			fout.open("data6.txt", ios::binary);
 			fout << chiefr.encrypt(word);
 			fout.close();
-			fout.open("data3.txt", ios::binary);
+			fout.open("data7.txt", ios::binary);
 			fout << chiefr.decrypt(chiefr.encrypt(word));
 			fout.close();
 			break;
